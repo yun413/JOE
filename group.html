@@ -36,7 +36,7 @@
 	margin-left: 40px;
 }
 .auto-style14 {
-	font-size: large;
+	font-size: x-large;
 	text-align: right;
 	margin-left: 40px;
 	font-family: "Adobe 繁黑體 Std B";
@@ -154,17 +154,42 @@
 	border-width: 0px;
 }
 </style>
+<script type="text/javascript">
+<!--
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
 </head>
 
-<body>
+<body onload="FP_preloadImgs(/*url*/'PIC/button11.jpg',/*url*/'PIC/button12.jpg')">
 
 <table style="width: 100%">
 	<tr>
 		<td class="auto-style39">
-		<a href="index.htm" name="頂端">
-		<img alt="" height="472" src="pic2/網頁橫幅.png" width="850" class="auto-style43" /></a>&nbsp;</td>
+		<img alt="按一下回首頁" height="472" src="element%20pic/網頁橫幅.png" width="850" class="auto-style43" /></td>
 	</tr>
 </table>
+<p class="auto-style20"><a href="index.htm">
+<img id="img1" alt="回首頁" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'PIC/button12.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'PIC/button10.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'PIC/button11.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'PIC/button11.jpg')" src="PIC/button10.jpg" style="border: 0" width="100" /><!-- MSComment="ibutton" fp-style="fp-btn: Soft Rectangle 6" fp-title="回首頁" --></a></p>
 <p class="auto-style19">組長:019戴羽彤</p>
 <p class="auto-style18">組員:001王怡茹、007王筠婷、009呂雯莉、010林采妮、020江幼婷</p>
 <p class="auto-style18">指導老師:陳賢錫、徐豐明</p>
@@ -214,7 +239,7 @@
 <p class="auto-style11"><span class="auto-style28"><a name="四、操作示意:_">四、操作示意:</a></span><span class="auto-style16">
 <a href="#目錄" class="auto-style24">回目錄</a></span></p>
 <p class="auto-style11">
-<img alt="" height="724" src="pic2/操作.png" width="750" /></p>
+<img alt="" height="724" src="element%20pic/操作.png" width="750" /></p>
 <p class="auto-style10">&nbsp;</p>
 <p class="auto-style11"><span class="auto-style28"><a name="五、場景變化:_">五、場景介紹:</a></span><span class="auto-style16">
 <a href="#目錄" class="auto-style24">回目錄</a></span></p>
@@ -223,20 +248,20 @@
 <p class="auto-style11"><span class="auto-style28"><a name="六、道具系統風格示意圖:_">
 六、道具展示:</a></span><span class="auto-style16"> 
 <a href="#目錄" class="auto-style24">回目錄</a></span></p>
-<p class="auto-style23">◆元素:角色必須蒐集到全部元素才能開啟大門，進入下一關。</p>
+<p class="auto-style23">◆鑽石:角色必須蒐集到全部元素才能開啟大門，進入下一關。</p>
 <p class="auto-style23">元素：水元素、土元素、火元素</p>
 <table style="width: 94%; height: 126px;" align="center" class="auto-style41">
 	<tr>
 		<td class="auto-style40">
-		<img alt="" height="200" src="pic2/鑽石.png" width="200" />&nbsp;</td>
+		<img alt="" height="200" src="element%20pic/new%20game/鑽石.png" width="200" />&nbsp;</td>
 		<td class="auto-style40">
-		<img alt="" height="230" src="pic2/水元素.png" width="230" /></td>
+		<img alt="" height="230" src="element%20pic/new%20game/水地圖/水元素.png" width="230" /></td>
 		<td class="auto-style40">
-		<img alt="" height="200" src="pic2/火元素.png" width="200" /></td>
+		<img alt="" height="200" src="element%20pic/new%20game/火地圖/火元素.png" width="200" /></td>
 		<td class="auto-style40" style="width: 360px">
-		<img alt="" height="280" src="pic2/土元素.png" width="280" /></td>
+		<img alt="" height="280" src="element%20pic/new%20game/土地圖/土元素.png" width="280" /></td>
 		<td class="auto-style40">
-		<img alt="" height="240" src="pic2/尖刺.png" width="240" /></td>
+		<img alt="" height="240" src="element%20pic/new%20game/尖刺.png" width="240" /></td>
 	</tr>
 </table>
 <p class="auto-style23">左到右:鑽石、水元素、火元素、土元素、尖刺障礙</p>
@@ -244,39 +269,39 @@
 <p class="auto-style23"><a name="七、角色風格示意圖:_"><span class="auto-style26">七、角色風格示意圖:</span></a><span class="auto-style16">
 <a href="#目錄" class="auto-style24">回目錄</a></span></p>
 <p class="auto-style11">
-<img alt="" class="auto-style22" height="282" src="pic2/未命名-1-04.png" width="600" /></p>
+<img alt="" class="auto-style22" height="282" src="group%20pic/未命名-1-04.png" width="600" /></p>
 <p class="auto-style23">&nbsp;</p>
 <p class="auto-style23"><a name="八、介面流程:_"><span class="auto-style26">八、介面流程:</span></a><span class="auto-style16">
 <a href="#目錄" class="auto-style24">回目錄</a></span></p>
 <p class="auto-style11">
-<img alt="" height="600" src="pic2/遊玩流程.png" width="600" />&nbsp;</p>
+<img alt="" height="600" src="element%20pic/遊玩流程.png" width="600" />&nbsp;</p>
 <p class="auto-style23">&nbsp;</p>
 <p class="auto-style23"><a name="九、介面+角色示意圖:_"><span class="auto-style26">九、各世界展示:</span></a><span class="auto-style16">
 <a href="#目錄" class="auto-style24">回目錄</a></span></p>
 <p class="auto-style11">
-<img alt="" height="409" src="pic2/未命名-1-07.png" width="750" /></p>
+<img alt="" height="409" src="group%20pic/未命名-1-07.png" width="750" /></p>
 <p class="auto-style23">▲火城市</p>
 <p class="auto-style21">&nbsp;</p>
 <p class="auto-style11">
-<img alt="" height="411" src="pic2/未命名-1-08.png" width="750" /></p>
+<img alt="" height="411" src="group%20pic/未命名-1-08.png" width="750" /></p>
 <p class="auto-style23">▲土城市</p>
 <p class="auto-style21">&nbsp;</p>
 <p class="auto-style13">
-<img alt="" height="410" src="pic2/未命名-1-09.png" width="750" /></p>
+<img alt="" height="410" src="group%20pic/未命名-1-09.png" width="750" /></p>
 <p class="auto-style23">▲水城市</p>
 <p class="auto-style21">&nbsp;</p>
 <p class="auto-style23"><a name="十、使用者介面:_"><span class="auto-style26">十、使用者介面:</span></a><span class="auto-style16">
 <a href="#目錄" class="auto-style24">回目錄</a></span></p>
 <p class="auto-style11">
-<img alt="" class="auto-style22" height="364" src="pic2/未命名-1-06.png" width="650" /></p>
+<img alt="" class="auto-style22" height="364" src="group%20pic/未命名-1-06.png" width="650" /></p>
 <p class="auto-style23">▲初始介面</p>
 <p class="auto-style21">&nbsp;</p>
 <p class="auto-style13">
-<img alt="" height="371" src="pic2/關卡.png" width="650" /></p>
+<img alt="" height="371" src="element%20pic/關卡.png" width="650" /></p>
 <p class="auto-style23">▲地圖選單</p>
 <p class="auto-style21">&nbsp;</p>
 <p class="auto-style13">
-<img alt="" height="368" src="pic2/失敗.png" width="650" /></p>
+<img alt="" height="368" src="element%20pic/失敗.png" width="650" /></p>
 <p class="auto-style23">▲結束介面</p>
 <p class="auto-style23">&nbsp;</p>
 <table style="width: 100%">
